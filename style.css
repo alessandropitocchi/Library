@@ -143,6 +143,7 @@ body{
 
 .read{
     font-size: 22px;
+    color: white;
     margin: 20px;
     width: 70%;
     height: 15%;
@@ -158,6 +159,7 @@ body{
 
 .unread{
     font-size: 22px;
+    color: white;
     margin: 20px;
     width: 70%;
     height: 15%;
@@ -173,6 +175,7 @@ body{
 
 .btn{
     background-color: #b8bfc2;
+    color: white;
     font-size: 22px;
     margin: 10px;
     width: 70%;
