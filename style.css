@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+.cell{
+    border: 1px solid black;
+
+}
+
+body{
+    background-color: #d2d2d2;
+}
+
+.header{
+    background-color: #dcdcdc;
+    font-size: 26px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid gray;
+    border-radius: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.addBookBtn{
+    padding-top: 20px;
+    font-size: 22px;
+    border: 0;
+    color: gray;
+    background-color: transparent;
+}
+
+.addBookBtn:hover{
+    color: black;
+}
+
+.grid{
+
+    text-align: center;
+    padding: 20px 40px;
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 50px;
+}
+
+.bookCard{
+    background-color: #dcdcdc;
+    height: 100%;
+    padding: 10px;
+    font-size: 22px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.bookCard p{
+    padding: 8px;
+}
+
+.bookCard button{
+    margin: 10px;
+}
+
+/* modal */
+
+.addBookModal{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent{
+    background-color: white;
+    padding: 30px;
+    width: 20%;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.formModal{
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+
+.modalTitle{
+    font-size: 35px;
+}
+
+.inputText{
+    padding: 3px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.modalBtn{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #49b675;
+    font-size: 22px;
+    width: 100%;
+}
+
+.modalBtn:hover{
+    background-color: #3a925e;
+}
+
+.closeModalBtn{
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #e71837;
+    font-size: 18px;
+    width: 100%;
+}
+
+.closeModalBtn:hover{
+    background-color: #b9132c;
+}
+
+.visible{
+  visibility: visible;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.read{
+    font-size: 22px;
+    margin: 20px;
+    width: 70%;
+    height: 15%;
+    background-color:  #49b675;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.read:hover{
+    background-color: #3a925e;
+}
+
+.unread{
+    font-size: 22px;
+    margin: 20px;
+    width: 70%;
+    height: 15%;
+    background-color: #e71837;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.unread:hover{
+    background-color: #b9132c;
+}
+
+.btn{
+    background-color: #b8bfc2;
+    font-size: 22px;
+    margin: 10px;
+    width: 70%;
+    height: 15%;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #8f9a9f;
+}
+
+
+@media (max-width: 1100px){
+    .grid{
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .bookCard{
+        height: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    
+    .bookCard p{
+        padding: 8px;
+    }
+
+    .bookCard button{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 750px){
+    .grid{
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .bookCard button{
+        font-size: 14px;
+    }
+}

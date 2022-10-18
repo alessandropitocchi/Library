@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+    <title>Library</title>
+</head>
+<body>
+    <header class="cell header">
+        <div><h1>My Library</h1></div>
+        <div><button class="addBookBtn">+ Add Book</button></div>
+    </header>
+
+    <main class="grid"></main>
+    
+    <div class="addBookModal hidden">
+        <div class="modalContent">
+            <form action="#" class="formModal">
+                <h1 class="modalTitle">Book Info</h1>
+                <div>
+                    <input type="text" class="inputText" name="title" id="title" placeholder="Title..." required>
+                </div>
+
+                <div>
+                    <input type="text" class="inputText" name="author" id="author" placeholder="Author..." required>
+                </div>   
+                
+                <div>
+                    <input type="number" class="inputText" name="pages" id="pages" placeholder="Pages..." required>
+                </div> 
+
+                <div>
+                    <p>Have you read it? <input type="checkbox" name="isRead" id="isRead" required></p>
+                </div> 
+
+                <div>
+                    <button class="modalBtn">Add Book</button>
+                    <button class="closeModalBtn">Close</button>
+                </div> 
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
